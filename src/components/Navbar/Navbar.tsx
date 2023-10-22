@@ -64,7 +64,7 @@ export const Navbar = () => {
                     </a>
                 </li>
             </NavLinks>
-            <Button />
+            <Button appearance="secondary">Login</Button>
         </Wrapper>
     )
 }
