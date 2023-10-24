@@ -26,11 +26,11 @@ export const Home = () => {
             <StyledBody>
                 <Hero />
                 <Section />
+                {/* <Section />
                 <Section />
                 <Section />
                 <Section />
-                <Section />
-                <Section />
+                <Section /> */}
                 <Footer />
             </StyledBody>
         </Wrapper>
