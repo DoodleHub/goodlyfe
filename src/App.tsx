@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
         list-style: none;
         font-family: 'Poppins', sans-serif;
     }
-
+    
     body {
         margin: 0;
         padding: 0;

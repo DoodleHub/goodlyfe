@@ -7,21 +7,32 @@ const Wrapper = styled.div`
     gap: 8px;
 `
 
-const DotIndex = styled.div<{ $selected?: boolean }>`
+const Dot = styled.div<{ $selected?: boolean }>`
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    cursor: pointer;
     background-color: ${({ $selected }) => ($selected ? '#E43071' : 'white')};
 `
 
-export const SliderControls = () => {
+interface SliderControls {
+    selectedIndex: number
+    updateIndex: React.Dispatch<React.SetStateAction<number>>
+}
+
+export const SliderControls = ({
+    selectedIndex,
+    updateIndex,
+}: SliderControls) => {
     return (
         <Wrapper>
-            <DotIndex />
-            <DotIndex />
-            <DotIndex $selected={true} />
-            <DotIndex />
-            <DotIndex />
+            {[...Array(5).keys()].map((index) => (
+                <Dot
+                    key={index}
+                    $selected={index === selectedIndex}
+                    onClick={() => updateIndex(index)}
+                />
+            ))}
         </Wrapper>
     )
 }
