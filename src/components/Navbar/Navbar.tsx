@@ -8,7 +8,6 @@ const Wrapper = styled.div`
     position: fixed;
     top: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 101px;
@@ -19,6 +18,7 @@ const Wrapper = styled.div`
 const NavLinks = styled.ul`
     display: flex;
     gap: 4rem;
+    margin: 0 4rem 0 auto;
 
     li a {
         color: white;
@@ -37,7 +37,9 @@ const NavLinks = styled.ul`
 export const Navbar = () => {
     return (
         <Wrapper>
-            <img src={Logo} alt="logo" width={187} height={44} />
+            <a href="#">
+                <img src={Logo} alt="logo" width={187} height={44} />
+            </a>
             <NavLinks>
                 <li>
                     <a href="#">Classes</a>
@@ -59,7 +61,7 @@ export const Navbar = () => {
                         Search{' '}
                         <HiOutlineSearch
                             size={24}
-                            style={{ transform: 'scaleX(-1' }}
+                            style={{ transform: 'scaleX(-1)' }}
                         />
                     </a>
                 </li>
