@@ -13,6 +13,7 @@ const Wrapper = styled.div`
     height: 101px;
     padding: 0 2rem;
     background-color: #e43071;
+    z-index: 99;
 `
 
 const NavLinks = styled.ul`
