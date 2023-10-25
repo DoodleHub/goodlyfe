@@ -22,7 +22,7 @@ const StyledButton = styled.button<{ $appearance: string; $size: string }>`
             case 'secondary':
                 return css`
                     color: #e43071;
-                    background-color: #f7f7fc;
+                    background-color: white;
 
                     &:hover {
                         color: #be285e;
@@ -47,11 +47,11 @@ const StyledButton = styled.button<{ $appearance: string; $size: string }>`
     }}
 
     border-radius: 200px;
-    border: 1px solid #e43071;
+    border: 2px solid #e43071;
 
     &:hover {
         cursor: pointer;
-        border: 1px solid #be285e;
+        border: 2px solid #be285e;
     }
 `
 

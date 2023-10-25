@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Footer } from '../components/Footer/Footer'
 import { Hero } from '../components/Hero/Hero'
 import { Navbar } from '../components/Navbar/Navbar'
-import { Section } from '../components/Section/Section'
+import { FaqSection } from '../components/FaqSection/FaqSection'
 
 const Wrapper = styled.div`
     display: flex;
@@ -25,12 +25,7 @@ export const Home = () => {
             <Navbar />
             <StyledBody>
                 <Hero />
-                <Section />
-                {/* <Section />
-                <Section />
-                <Section />
-                <Section />
-                <Section /> */}
+                <FaqSection />
                 <Footer />
             </StyledBody>
         </Wrapper>
