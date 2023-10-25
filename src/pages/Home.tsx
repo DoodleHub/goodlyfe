@@ -5,6 +5,7 @@ import { Hero } from '../components/Hero/Hero'
 import { Navbar } from '../components/Navbar/Navbar'
 import { FaqSection } from '../components/FaqSection/FaqSection'
 import { JoinSection } from '../components/JoinSection/JoinSection'
+import { FacilitySection } from '../components/FacilitySection/FacilitySection'
 
 const Wrapper = styled.div`
     display: flex;
@@ -28,6 +29,7 @@ export const Home = () => {
                 <Hero />
                 <FaqSection />
                 <JoinSection />
+                <FacilitySection />
                 <Footer />
             </StyledBody>
         </Wrapper>
