@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { Button } from '../Button/Button'
 import FirstImageSvg from '../../assets/images/hero2.svg'
-import SecondImageSvg from '../../assets/images/section.svg'
+import SecondImageSvg from '../../assets/images/faqImage.svg'
 
 const Wrapper = styled.div`
     display: flex;
