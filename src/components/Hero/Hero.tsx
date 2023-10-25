@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 import { SliderControls } from '../SliderControls/SliderControls'
@@ -96,6 +96,16 @@ const ImageOverlay = () => (
 
 export const Hero = () => {
     const [selectedIndex, setSelectedIndex] = useState(0)
+
+    const updateSlide = () => {
+        setSelectedIndex((selectedIndex) => (selectedIndex + 1) % 5)
+    }
+
+    useEffect(() => {
+        const updateSlideInternal = setInterval(updateSlide, 3500)
+
+        return () => clearInterval(updateSlideInternal)
+    }, [])
 
     return (
         <Wrapper>
