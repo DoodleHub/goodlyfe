@@ -271,6 +271,7 @@ Error generating stack: `+i.message+`
     display: flex;
     gap: 32px;
     flex-direction: column;
+    justify-content: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.18);
