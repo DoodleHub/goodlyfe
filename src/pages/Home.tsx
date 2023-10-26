@@ -6,6 +6,7 @@ import { Navbar } from '../components/Navbar/Navbar'
 import { FaqSection } from '../components/FaqSection/FaqSection'
 import { JoinSection } from '../components/JoinSection/JoinSection'
 import { FacilitySection } from '../components/FacilitySection/FacilitySection'
+import { StorySection } from '../components/StorySection/StorySection'
 
 const Wrapper = styled.div`
     display: flex;
@@ -30,6 +31,7 @@ export const Home = () => {
                 <FaqSection />
                 <JoinSection />
                 <FacilitySection />
+                <StorySection />
                 <Footer />
             </StyledBody>
         </Wrapper>

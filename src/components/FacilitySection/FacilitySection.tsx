@@ -7,8 +7,9 @@ import SecondImageSvg from '../../assets/images/facilityImage2.svg'
 const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 720px;
+    height: 520px;
     padding: 100px 120px;
 `
 
