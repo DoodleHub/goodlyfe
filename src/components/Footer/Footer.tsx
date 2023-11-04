@@ -1,5 +1,3 @@
-import styled from 'styled-components'
-
 import Logo2 from '../../assets/images/logo2.svg'
 import InstagramLogo from '../../assets/images/instagramLogoSmall.svg'
 import DribbbleLogo from '../../assets/images/dribbbleLogoSmall.svg'
@@ -8,74 +6,17 @@ import YoutubeLogo from '../../assets/images/youtubeLogoSmall.svg'
 import MessageIcon from '../../assets/images/messageIcon.svg'
 import PhoneIcon from '../../assets/images/phoneIcon.svg'
 import LocationIcon from '../../assets/images/locationIcon.svg'
-
-const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 471px;
-    width: 100%;
-    padding: 0 165px;
-    background-color: #0b0d17;
-    color: #d9dbe1;
-
-    a {
-        text-decoration: none;
-        color: #d9dbe1;
-        font-size: 14px;
-    }
-`
-
-const MainFooter = styled.div`
-    display: flex;
-    justify-content: space-between;
-    padding: 68px 0;
-`
-
-const SubFooter = styled.div`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 72px;
-`
-
-const ShareColumn = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    width: 255px;
-`
-
-const LinksColumn = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-`
-
-const Header = styled.div`
-    font-size: 20px;
-    font-weight: 500;
-`
-
-const IconContainer = styled.div`
-    display: flex;
-    gap: 16px;
-`
-
-const TermsAndConditions = styled.div`
-    display: flex;
-    gap: 8px;
-
-    a + a:before {
-        content: ' | ';
-        padding: 0 10px;
-    }
-`
-
-const ContactLink = styled.div`
-    display: flex;
-    gap: 8px;
-`
+import {
+    Wrapper,
+    MainFooter,
+    ShareColumn,
+    IconContainer,
+    LinksColumn,
+    Header,
+    ContactLink,
+    SubFooter,
+    TermsAndConditions,
+} from './Footer.styles'
 
 const QUICK_LINKS = [
     {
