@@ -7,6 +7,7 @@ import { FacilitySection } from '../../components/FacilitySection/FacilitySectio
 import { StorySection } from '../../components/StorySection/StorySection'
 import { Wrapper, StyledBody } from './Home.styles'
 import { MobileAppSection } from '../../components/MobileAppSection/MobileAppSection'
+import { SocialButtonSection } from '../../components/SocialButtonSection/SocialButtonSection'
 
 export const Home = () => {
     return (
@@ -19,6 +20,7 @@ export const Home = () => {
                 <FacilitySection />
                 <StorySection />
                 <MobileAppSection />
+                <SocialButtonSection />
                 <Footer />
             </StyledBody>
         </Wrapper>
