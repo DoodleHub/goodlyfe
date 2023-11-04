@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import { Home } from './pages/Home'
+import { Home } from './pages/Home/Home'
 
 const GlobalStyle = createGlobalStyle`
     * {
