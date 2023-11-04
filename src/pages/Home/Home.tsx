@@ -6,6 +6,7 @@ import { JoinSection } from '../../components/JoinSection/JoinSection'
 import { FacilitySection } from '../../components/FacilitySection/FacilitySection'
 import { StorySection } from '../../components/StorySection/StorySection'
 import { Wrapper, StyledBody } from './Home.styles'
+import { MobileAppSection } from '../../components/MobileAppSection/MobileAppSection'
 
 export const Home = () => {
     return (
@@ -17,6 +18,7 @@ export const Home = () => {
                 <JoinSection />
                 <FacilitySection />
                 <StorySection />
+                <MobileAppSection />
                 <Footer />
             </StyledBody>
         </Wrapper>
