@@ -6,6 +6,15 @@ export const Wrapper = styled.div`
     justify-content: center;
     height: 691px;
     width: 100%;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 77px;
+
+    @media screen and (max-width: 1024px) {
+        font-size: 2.5rem;
+        height: 400px;
+        line-height: 55px;
+    }
 `
 
 export const StyledImage = styled.img<{ $show: boolean }>`
@@ -36,11 +45,12 @@ export const ImageOverlayContainer = styled.div`
     align-items: center;
     text-align: center;
     max-width: 600px;
+
+    @media screen and (max-width: 1024px) {
+        top: 20%;
+    }
 `
 
 export const HeroText = styled.span`
-    font-size: 70px;
-    font-weight: 700;
     color: white;
-    line-height: 77px;
 `

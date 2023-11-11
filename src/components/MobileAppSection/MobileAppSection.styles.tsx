@@ -9,6 +9,17 @@ export const Wrapper = styled.div`
     width: 100%;
     background-color: #e43071;
     padding: 0 180px;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        height: 100%;
+        padding: 24px 12px;
+    }
+`
+
+export const Header = styled.div`
+    font-size: 40px;
+    font-weight: 700;
 `
 
 export const LeftColumn = styled.div`
@@ -17,6 +28,14 @@ export const LeftColumn = styled.div`
     gap: 16px;
     width: 50%;
     color: white;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+
+        ${Header} {
+            font-size: 24px;
+        }
+    }
 `
 
 export const RightColumn = styled.div`
@@ -24,11 +43,10 @@ export const RightColumn = styled.div`
     width: 50%;
     height: 100%;
     position: relative;
-`
 
-export const Header = styled.div`
-    font-size: 40px;
-    font-weight: 700;
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
 `
 
 export const PhoneContainer = styled.div`

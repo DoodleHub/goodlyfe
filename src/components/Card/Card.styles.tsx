@@ -12,6 +12,10 @@ export const Wrapper = styled.div<{ $height: number; $width: number }>`
     border-radius: 10px;
     box-shadow: 1px 4px 8px 0px rgba(0, 0, 0, 0.18);
     line-height: 32px;
+
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
 `
 
 export const CardHeader = styled.div`

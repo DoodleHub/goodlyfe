@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+export const Header = styled.div`
+    font-size: 40px;
+    font-weight: 700;
+    color: #e43071;
+`
+
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -9,12 +15,16 @@ export const Wrapper = styled.div`
     height: 323px;
     width: 100%;
     background-color: #ededed;
-`
 
-export const Header = styled.div`
-    font-size: 40px;
-    font-weight: 700;
-    color: #e43071;
+    @media screen and (max-width: 1024px) {
+        height: 100%;
+        padding: 24px 12px;
+        gap: 8px;
+
+        ${Header} {
+            font-size: 24px;
+        }
+    }
 `
 
 export const ButtonGroup = styled.div`
@@ -34,6 +44,21 @@ export const ButtonGroup = styled.div`
         img {
             height: 30px;
             width: 15px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        gap: 16px;
+
+        a {
+            padding: 20px;
+            height: 55px;
+            width: 55px;
+
+            img {
+                height: 20px;
+                width: 10px;
+            }
         }
     }
 `

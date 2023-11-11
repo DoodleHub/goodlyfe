@@ -11,5 +11,11 @@ export const StyledBody = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 101px;
-    width: 1440px;
+    max-width: 1440px;
+    height: 100%;
+
+    @media screen and (max-width: 1440px) {
+        width: 100%;
+        margin-top: 50px;
+    }
 `

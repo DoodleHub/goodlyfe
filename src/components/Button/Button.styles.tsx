@@ -33,11 +33,26 @@ export const StyledButton = styled.button<{
                 return css`
                     width: 166px;
                     height: 50px;
+
+                    @media screen and (max-width: 1024px) {
+                        width: 100px;
+                        height: 30px;
+                    }
+
+                    @media screen and (max-width: 1200px) {
+                        width: 130px;
+                        height: 40px;
+                    }
                 `
             case 'md':
                 return css`
                     width: 237px;
                     height: 68px;
+
+                    @media screen and (max-width: 1200px) {
+                        width: 130px;
+                        height: 40px;
+                    }
                 `
         }
     }}
@@ -48,5 +63,9 @@ export const StyledButton = styled.button<{
     &:hover {
         cursor: pointer;
         border: 2px solid #be285e;
+    }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 0.8rem;
     }
 `
